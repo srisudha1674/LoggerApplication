@@ -22,7 +22,7 @@ public class LoggerController {
 	@RequestMapping(method=RequestMethod.POST,value="/addLog")
 	public void addLog(@RequestBody RequestModel userlog)
 	{
-		
+		System.out.println(userlog);
 		  loggerservice.addLog(userlog);
 	}
 

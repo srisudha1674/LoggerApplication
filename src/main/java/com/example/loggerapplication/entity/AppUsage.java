@@ -24,15 +24,15 @@ import lombok.Setter;
 public class AppUsage {
 	
 	@Id
-	@SequenceGenerator(name="seq",sequenceName="dept_seq", allocationSize = 1)        
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
+//	@SequenceGenerator(name="seq",sequenceName="dept_seq", allocationSize = 1)        
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq")
 	@Column(name = "LOG_ID")
-	private String log_id;
+	private String logId;
 	@Column(name ="EMAIL_ID")
-	private String email_id;
+	private String emailId;
 	@Column(name ="SERVICE_NAME")
-	private String servicename;
+	private String serviceName;
 	@Column(name ="ACCESSED_TIME")
-	private Date accessed_time;
+	private Date accessedTime;
 
 }
